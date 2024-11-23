@@ -1,0 +1,224 @@
+<!-- <!doctype html> -->
+<!-- <html lang="en"> -->
+<!--   <head> -->
+<!--     <meta charset="UTF-8" /> -->
+<!--     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+<!--     <link rel="stylesheet" href="main.css" /> -->
+<!--     <title>Document</title> -->
+<!--   </head> -->
+<!--   <body> -->
+<!--     <nav> -->
+<!--       <section id="logo">LOGO</section> -->
+<!--       <section id="nav-links"> -->
+<!--         <a class="nav-link" href="#">Home</a> -->
+<!--         <a class="nav-link" href="#">About Us</a> -->
+<!--         <a class="nav-link" href="#">Contact Us</a> -->
+<!--       </section> -->
+<!--     </nav> -->
+<!---->
+<!--     <main> -->
+<!--       <section id="hero"> -->
+<!--         <img src="triangle-svgrepo-com.svg" alt="" class="hero-triangle" /> -->
+<!--       </section> -->
+<!--     </main> -->
+<!--   </body> -->
+<!-- </html> -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Empire Builders - Our Vision, Your Empire</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      :root {
+        --primary-blue: #1e3d8f;
+        --primary-gold: #ffd700;
+        --dark-bg: #1a1a1a;
+      }
+
+      .hero {
+        background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url("./hero.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      .hero-content {
+        max-width: 800px;
+        padding: 20px;
+      }
+
+      .hero-content img {
+        width: 180px;
+        margin-bottom: 10px;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        margin-bottom: 20px;
+        color: var(--primary-gold);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      .cta-button {
+        padding: 15px 30px;
+        background-color: var(--primary-gold);
+        color: var(--dark-bg);
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: all 0.3s;
+      }
+
+      .cta-button:hover {
+        background-color: white;
+      }
+
+      .section {
+        padding: 80px 20px;
+      }
+
+      .about {
+        background-color: white;
+      }
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: 40px auto;
+      }
+
+      .service-card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .contact {
+        background-color: var(--primary-blue);
+        color: white;
+      }
+
+      .contact-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+      }
+
+      .contact-info {
+        padding: 20px;
+      }
+
+      footer {
+        background-color: var(--dark-bg);
+        color: white;
+        padding: 40px 20px;
+        text-align: center;
+      }
+
+      .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .section-title h2 {
+        font-size: 2.5rem;
+        color: var(--primary-blue);
+        margin-bottom: 15px;
+      }
+
+      .contact .section-title h2 {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-content">
+        <img src="./image.png" alt="Empire Builders Logo" />
+        <h1>EMPIRE BUILDERS</h1>
+        <p>Our Vision, Your Empire - Building Excellence Since Inception</p>
+        <a href="#contact" class="cta-button">Get In Touch</a>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-title">
+        <h2>About Us</h2>
+        <p>Building Dreams Into Reality</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>Construction Excellence</h3>
+          <p>
+            Specializing in commercial and residential construction with
+            unmatched quality and precision.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Project Management</h3>
+          <p>
+            Professional project management ensuring timely delivery and
+            cost-effective solutions.
+          </p>
+        </div>
+        <div class="service-card">
+          <h3>Tender Management</h3>
+          <p>
+            Expert handling of construction tenders with comprehensive
+            documentation and competitive pricing.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Let's Build Your Empire Together</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Peshawar Office</h3>
+          <p>Northern Bypass, Near Charsadda Road Peshawar</p>
+          <p>Email: empire_builder@yahoo.com</p>
+          <p>Phone: 0311-8889217</p>
+        </div>
+        <div class="contact-info">
+          <h3>Mardan Office</h3>
+          <p>Office MTC 2 Opposite DC Office Mardan</p>
+          <p>Phone: 0313-0946776</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Empire Builders. All rights reserved.</p>
+      <p>Our Vision, Your Empire</p>
+    </footer>
+  </body>
+</html>
